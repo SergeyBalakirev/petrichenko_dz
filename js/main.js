@@ -1,6 +1,6 @@
 'use strict';
 
-
+// Курс Петриченка 
 
 // let number = 5;
 // const leftBorderWidth = 1;
@@ -56,76 +56,66 @@
 
 // console.log(personalMovieDB);
 
+// Условия урок:
 
-// Курс Лущенка 
+if (4 == 9) {
+  console.log('Ok!');
+} else {
+  console.log('Error!');
+}
 
+const num = 51;
 
-// console.log('Sergey');
-// console.log(7);
-// console.log('Добро ' + 'пожаловать ' + 'на курс');
-
-
-// alert('Hello'); 
-
-// document.getElementById('out').innerHTML = 'Hello';
-
-// document.querySelector('.header').innerHTML = 'World!';
-// document.querySelector('#one').innerHTML = 'lorem';
-
-// let a = document.querySelector('#one');
-// a.innerHTML = 999;
-
-// let b = 6;
-// let c = 'Hello!';
-
-// console.log(b);
-
-// let inputIn = document.querySelector('.input-in');
-// let button = document.querySelector('button');
-// let div = document.querySelector('.out');
-
-// button.onclick = function () {
-// console.log('Work!');
-// console.log(inputIn.value);
-//   let d = inputIn.value;
-//   console.log(d);
-//   div.innerHTML = d;
-//   inputIn.value = '';
-// };
-
-// if, else, switch 
-
-// let a1 = 6;
-
-// if (a1 > 9) {
-//   console.log('Yes');
+// if (num < 49) {
+//   console.log('Error!');
+// } else if (num > 100) {
+//   console.log('Много');
 // } else {
-//   console.log('else');
+//   console.log('Ok!');
 // }
 
-const button = document.querySelector('button');
-const input = document.querySelector('.age');
 
-button.onclick = function () {
-  let num = +input.value;
-  if (num >= 16 && num < 60) {
-    console.log('welcome');
-  } else if (num > 60) {
-    console.log('ты точно сюда?');
-  } else {
+// (num === 50) ? console.log('Ok!') : console.log('Error!');
+
+// На строгое сравнение 
+switch (num) {
+  case 49:
+    console.log('неверно');
+    break;
+  case 100:
+    console.log('неверно');
+    break;
+  case 50:
+    console.log('верно');
+    break;
+  default:
     console.log('no');
+    break;
+
+}
+
+// Циклы урок 
+
+let num1 = 50;
+
+// while (num1 < 55) {
+//   console.log(num1);
+//   num1++;
+// }
+
+// do {
+//   console.log(num1);
+//   num1++;
+// }
+// while (num1 < 55);
+
+for (let i = 1; i < 8; i++) {
+
+  if (i === 6) {
+    // break;
+    continue;
   }
 
+  console.log(i);
 
-  switch (num) {
-    case 15:
-      console.log('еще год потерпи');
-      break;
-    case 16:
-      console.log('можно');
-      break;
-    default:
-      console.log('Хорошо');
-  }
-
-};
+}
